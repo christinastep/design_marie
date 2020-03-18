@@ -2,8 +2,156 @@
 @import 'reset';
 
 body{
-  background-color: green;
-  h1{
-    color: red;
+  display: flex;
+  min-height: 100vh;
+  justify-content: center;
+  align-items: center;
+  font-family: sans-serif;
+  
+}
+
+.wrapper--flex{
+  display: flex;
+  justify-content: center;
+}
+
+.wrapper{
+  display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  .intro--img{
+    margin-bottom: 30px;
+  }
+  p{
+    color: grey;
+    //text-align: center;
+    //width: 100%;
+  }
+  
+  .wrapper--form{
+    margin-top: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    .wrapper--input{
+      display: flex;
+      align-items: center;
+      input{
+        margin-right: 10px;
+        margin-left: 10px;
+      }
+    }
   }
 }
+
+button{
+  background-color: #3A5D81;
+  color: #fff;
+  border:none;
+  outline: 0;
+  padding:10px 20px;
+  border-radius: 5px;
+  margin-top: 20px;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.input{
+  font-size: 16px;
+  display: block;
+  padding: 4px 5px;
+  &:focus{
+    outline-color: #3A5D81;
+  }
+}
+
+.intro--img{
+  width: 300px;
+  //text-align: center;
+}
+
+.marie__nom{
+  background-color: #3A5D81;
+  color: #fff !important;
+  padding:10px;
+  width: 300px;
+  text-align: center;
+}
+
+.wrapper--output{
+  margin-top: 20px;
+  @media screen and (min-width: 800px) {
+    display: flex;
+  }
+  .intro--img{
+    margin-bottom: 10px;
+    
+  }
+}
+
+.wrapper--output{
+  width: 100%;
+  @media screen and (max-width: 800px) {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  @media screen and (min-width: 800px) {
+    width: 800px;
+  }
+}
+
+.box--content{
+  @media screen and (max-width: 800px) {
+    width:300px;
+    text-align: center;
+    margin-bottom: 30px;
+  }
+  @media screen and (min-width: 800px) {
+    width:33.3%;
+    display: flex;
+    align-items: flex-start;
+  }
+  img{
+    width:20%;
+    margin-right: 10px;
+  }
+  h2{
+    font-weight: bold;
+    color: #3A5D81;
+    margin-bottom: 5px;
+
+  }
+  .space{
+    margin-right: 5px;
+    margin-left: 5px;
+  }
+}
+
+.opening--day{
+  margin-bottom: 5px;
+  .opening__headline{
+    font-size: 0.8em;
+    font-weight: lighter;
+  }
+}
+
+.box--contact{
+  a{
+    color: grey;
+    text-decoration: none;
+    &:hover{
+      color: #3A5D81;
+    }
+  }
+}
+
+.back{
+  position: absolute;
+  width:50px;
+  top:10px;
+  left:10px;
+}
+
